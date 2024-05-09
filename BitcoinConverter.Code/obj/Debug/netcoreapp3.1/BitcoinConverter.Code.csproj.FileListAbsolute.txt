@@ -1,0 +1,9 @@
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.AssemblyInfoInputs.cache
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.AssemblyInfo.cs
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.csproj.CoreCompileInputs.cache
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\bin\Debug\netcoreapp3.1\BitcoinConverter.Code.deps.json
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\bin\Debug\netcoreapp3.1\BitcoinConverter.Code.dll
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\bin\Debug\netcoreapp3.1\BitcoinConverter.Code.pdb
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.dll
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Code\obj\Debug\netcoreapp3.1\BitcoinConverter.Code.pdb

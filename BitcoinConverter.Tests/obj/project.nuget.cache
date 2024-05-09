@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VOtD6/w5hllqngGcx9j0ApIgTuNwkupS0UF/NaA8LIFcGdyzv2NB6fSH3wKzUm0OGelL3pfwjyV//W/fCVG1mQ==",
+  "dgSpecHash": "FqTVUzAyZJTmiYKbv64nNnNs4G6aH9IYUSUZpcwdljJABwd4Vjd5KmnAk0kotUirDyk/a4DOog4YeVC2xnfMmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dagke\\Documents\\Develop\\TDD\\BitcoinConverter\\BitcoinConverter.Tests\\BitcoinConverter.Tests.csproj",
   "expectedPackageFiles": [

@@ -1712,6 +1712,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "BitcoinConverter.Code/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BitcoinConverter.Code.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BitcoinConverter.Code.dll": {}
+        }
       }
     }
   },
@@ -5506,10 +5516,16 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "BitcoinConverter.Code/1.0.0": {
+      "type": "project",
+      "path": "../BitcoinConverter.Code/BitcoinConverter.Code.csproj",
+      "msbuildProject": "../BitcoinConverter.Code/BitcoinConverter.Code.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BitcoinConverter.Code >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
@@ -5542,7 +5558,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dagke\\Documents\\Develop\\TDD\\BitcoinConverter\\BitcoinConverter.Code\\BitcoinConverter.Code.csproj": {
+              "projectPath": "C:\\Users\\dagke\\Documents\\Develop\\TDD\\BitcoinConverter\\BitcoinConverter.Code\\BitcoinConverter.Code.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

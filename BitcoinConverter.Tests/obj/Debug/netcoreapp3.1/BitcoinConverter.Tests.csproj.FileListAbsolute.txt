@@ -96,3 +96,6 @@ C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\obj
 C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\obj\Debug\netcoreapp3.1\BitcoinConverter.Tests.dll
 C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\obj\Debug\netcoreapp3.1\BitcoinConverter.Tests.pdb
 C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\obj\Debug\netcoreapp3.1\BitcoinConverter.Tests.genruntimeconfig.cache
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\bin\Debug\netcoreapp3.1\BitcoinConverter.Code.dll
+C:\Users\dagke\Documents\Develop\TDD\BitcoinConverter\BitcoinConverter.Tests\bin\Debug\netcoreapp3.1\BitcoinConverter.Code.pdb
