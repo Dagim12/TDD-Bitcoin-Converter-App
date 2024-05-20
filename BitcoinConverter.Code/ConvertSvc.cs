@@ -9,35 +9,64 @@ namespace Technopia.BitcoinConverter
     public class ConvertSvc
     {
         readonly string BITCOIN_CURRRENT_PRICEURL = "https://api.coindesk.com/v1/bpi/currentprice.json";
+        private HttpClient httpClient;
         public ConvertSvc(){
-
-        }
-    
-        public async Task<double> GetExchangeRate(string currency) {
-            var response = await new HttpClient().GetStringAsync(BITCOIN_CURRRENT_PRICEURL);
-            var jsonDocument = JsonDocument.Parse(Encoding.ASCII.GetBytes(response));
-            
-            if(currency.Equals("USD")){
-                var rate = jsonDocument.RootElement.GetProperty("bpi").GetProperty(currency).GetProperty("rate");
-                Console.WriteLine(Double.Parse(rate.GetString()));
-                return Double.Parse(rate.GetString());
-            }
-            else if(currency.Equals("GBP")){
-                var rate = jsonDocument.RootElement.GetProperty("bpi").GetProperty(currency).GetProperty("rate");
-                return Double.Parse(rate.GetString());
-            }
-            else if(currency.Equals("EUR")){
-                var rate = jsonDocument.RootElement.GetProperty("bpi").GetProperty(currency).GetProperty("rate");
-                return Double.Parse(rate.GetString());
-            }
-            return 0;
+            this.httpClient = new HttpClient();
         }
 
-        public async Task<double> ConvertBitcoins(string currency, double coins)
+        public ConvertSvc(HttpClient client)
         {
+            this.httpClient = client;
+        }
+
+        public enum Currency
+        {
+            USD,
+            GBP,
+            EUR,
+        }
+        public async Task<double> GetExchangeRate(Currency currency) {
+
+            double rate = 0;
+
+            try
+            {
+                var response = await this.httpClient.GetStringAsync(BITCOIN_CURRRENT_PRICEURL);
+                var jsonDocument = JsonDocument.Parse(Encoding.ASCII.GetBytes(response));
+
+                var rateStr = jsonDocument.RootElement.GetProperty("bpi").GetProperty(currency.ToString()).GetProperty("rate");
+                
+                rate = Double.Parse(rateStr.GetString());
+            }
+            catch (Exception)
+            {
+
+                return -1;
+            }
+            
+            return Math.Round(rate,4);
+        }
+
+        public async Task<double> ConvertBitcoins(Currency currency, double coins)
+        {
+            double dollars = 0;
             var exchangeRate = await GetExchangeRate(currency);
 
-            return exchangeRate*coins;
+            if (coins <0)
+            {
+                throw new ArgumentException("Number of coins should be zero");
+            }
+
+            if (exchangeRate > 0)
+            {
+                dollars = exchangeRate * coins;
+            }
+            else
+            {
+                return -1;
+            }
+
+            return dollars;
         }
 
     }
