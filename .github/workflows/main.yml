@@ -32,7 +32,7 @@ jobs:
         dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
         
     - name: Publish Test Coverage Report
-      uses: ccoverallsapp/github-action@v2
+      uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: BitcoinConverter.Tests/TestResults/coverage.info
