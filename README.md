@@ -48,11 +48,15 @@ dotnet publish --runtime linux-x64 --configuration Release /p:TargetFramework=ne
 
 #Build for windows
 cd BitcoinConverter.Client
- dotnet publish -r win10-x64 --configuration Release /p:TargetFramework=netcoreapp3.1 /p:PublishSingleFile=true /p:PublishTrimmed=true -o ./executable
+dotnet publish -r win10-x64 --configuration Release /p:TargetFramework=netcoreapp3.1 /p:PublishSingleFile=true /p:PublishTrimmed=true -o ./executable
 
 #run executable:
 ./BitcoinConverter.Client
 ```
 
 ## GitHub Action - CICD
-This project demonstrates how to use [GitHub Actions](https://github.com/cloudacademy/csharp-tdd-bitcoinconverter/blob/main/.github/workflows/dotnet-core.yml) to perform automated builds, testing, packaging, and releases.
+This project uses [GitHub Actions](https://github.com/Dagim12/TDD-Bitcoin-Converter-App/blob/main/.github/workflows/main.yml) to perform automated builds, testing, packaging, and releases.
+
+
+## Coveralls - Code Coverage Report
+This project forwards its unit testing code coverage reports to [coveralls.io](https://coveralls.io/github/Dagim12/TDD-Bitcoin-Converter-App) for report viewing and analysis
